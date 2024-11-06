@@ -4,13 +4,12 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #111;
-    container: 1400px;
 }
 
 nav {
     position: fixed;
     top: 10px;
-    width: 75%;
+    width: 1070px;
     background-color: #fdfbfb54;
     padding: 30px 70px;
     z-index: 1000;
@@ -31,7 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: flex-start;
-    font-size: 11px;
+    font-size: 14px;
     margin-left: 600px;
     margin-top: -15px;
 }
@@ -101,8 +100,25 @@ p {
     text-align: left;
 }
 
-.buttons button {
+.buttons1 button {
     background-color: #ecab498e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 2.5px;
+    cursor: pointer;
+    opacity: 89%;
+    display:flex;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.buttons1 button:hover {
+    background-color: #36270b81;
+}
+
+.buttons2 button {
+    background-color: #fae3c131;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -110,10 +126,14 @@ p {
     border-radius: 1.5px;
     cursor: pointer;
     opacity: 89%;
+    display:flex;
+    margin-left: 160px;
+    margin-top: -40px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-.buttons button:hover {
-    background-color: #36270b81;
+.buttons2 button:hover {
+    background-color: #e4cda362;
 }
 
 .expert-area {
@@ -337,9 +357,9 @@ p {
 }
 
 .text0 p {
-  font-size: 16px;
-  text-align: left;
-  color: #808080;
+    font-size: 16px;
+    text-align: left;
+    color: #808080;
 }
 
 .moving-text {
@@ -350,6 +370,7 @@ p {
     font-weight: bold;
     color: #f8f8f8;
     animation: moveText 15s linear infinite; 
+    /* margin-bottom: 30px; */
 }
 
 @keyframes moveText {
@@ -375,8 +396,14 @@ section {
 }
 
 #projects .projects-container {
-    display: flex;
+    display:flex;
     justify-content: space-between;
+    counter-reset: 1070px;
+}
+
+#projects h2 {
+    font-size: 22px;
+    color: #f1f1f1;
 }
 
 #projects .project {
@@ -385,17 +412,25 @@ section {
 }
 
 #projects .project img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 1fr;
+    border-radius: 6px;
 }
 
 #projects .project button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #333;
+    background-color: #fae3c131;
     color: white;
     border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 1.5px;
     cursor: pointer;
+    opacity: 89%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#projects .project button:hover  {
+    background-color: #e4cda362;
 }
 
 #testimonials {
@@ -407,6 +442,11 @@ section {
 #contact a {
     color: #333;
     text-decoration: none;
+}
+
+#contact h2 {
+    font-size: 22px;
+    color: #f1f1f1;
 }
 
 #contact a:hover {
